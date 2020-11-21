@@ -4,60 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Contact</title>
 </head>
 <body>
     <header>
-        <h1>Joseph's Blog</h1>
-        <p>A Software Developer's Guide</p>
+        <h1>Software Developer Roadmap</h1>
+        <p> The developer's best guide</p>
     </header>
     <nav>
         <ul>
-            <li><a href="./index.html" title="Home">Home</a></li>
-            <li><a href="./about.html" title="About">About</a></li>
-            <li><a href="./contact.html" title="Contact">Contact</a></li>
+            <li><a href="./index.html" >Home</a></li>
+            <li><a href="./about.html" >About</a></li>
+            <li><a href="./contact.html" >Contact</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="content custom-form-container">
         <h2>Contact me</h2>
-        <form>
+        <form class="custom-form">
             <div>
                 <label for="name">
                     Name:
                     <input type="text" name="name" id="name">
                 </label>
             </div>
-            <br/>
+            
             <div>
                 <label for="email">
                     Email:
                     <input type="email" name="email" id="email">
                 </label>
             </div>
-            <br/>
+            
             <div>
                 <label for="reason">
                     Reason for contact: 
                     <select name="reason" id="reason">
-                      <option disabled>Select an option</option>
-                      <option>Saying hi</option>
-                      <option>Looking for a contractor</option>
-                      <option>Interested in an interview</option>
+                        <option disabled selected>Select a reason</option>
+                        <option>Saying hi</option>
+                        <option>Looking for a contractor</option>
+                        <option>Interested in an interview</option>
                     </select>
                 </label>
             </div>
-            <br/>
+            
             <div>
                 <label for="comments">
                     Comments:
-                    <textarea class="textarea" name="comments" id="comments" placeholder="Additional comments"></textarea>
+                    <textarea rows="5" class="textarea" name="comments" id="comments" placeholder="Additional comments"></textarea>
                 </label>
             </div>
-            <br/>
+            
             <div>
                 <input type="submit" value="Send">
             </div>
         </form>
     </main>
+    <footer>
+        <div id="copyright">
+            <p>
+                Copyright © 2020 Joseph Mpo Yeti
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
