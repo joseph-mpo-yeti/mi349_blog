@@ -4,9 +4,7 @@
 
 body {
     margin: 0;
-    padding: 15px;
     background-color: rgb(231, 231, 231);
-    padding-top: 25px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     color: #3E2723;
@@ -27,7 +25,6 @@ td, th {
 
 header, nav {
     width: 100%;
-    position: absolute;
     left: 0;
     top: 0;
     text-align: center;
@@ -35,12 +32,12 @@ header, nav {
 }
 
 header {
-    z-index: 2;
     padding-top: 25px;
 }
 
 header p {
     margin-top: 5px;
+    padding-bottom: 25px;
 }
 
 p {
@@ -49,7 +46,6 @@ p {
 
 h1 {
     margin: 0;
-    padding-top: 15px;
     z-index: 2;
     padding: 0;
     color:  #8a2be2;
@@ -70,7 +66,9 @@ h2, h3, h4 {
 }
 
 nav {
-    top: 85px;
+    padding: 1px;
+    position: sticky;
+    margin-top: -25px;
 }
 
 nav ul {
@@ -90,7 +88,7 @@ nav li {
     background-color: #fff;
     margin: auto;
     padding: 15px 45px 45px 45px;
-    margin-top: 120px;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
 
@@ -105,7 +103,7 @@ nav li {
 }
 
 #author-headshot {
-    max-width: 200px;
+    max-width: 150px;
     border-radius: 15px;
 }
 
@@ -123,19 +121,24 @@ footer div {
 
 .custom-form {
     margin: 25px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.custom-form > div {
+    flex-basis: 45%;
 }
 
 .custom-form label {
-    display: block;
     font-size: 1rem;
     margin: 15px auto;
 }
 
 input:not([type="submit"]), select, textarea {
-    display: block;
+    /* display: block; */
     margin-top: 5px;
+    margin-bottom: 15px;
     width: 90%;
-    max-width: 350px;
     padding: 8px;
     border-radius: 0;
     border: 1px solid black;
@@ -150,13 +153,17 @@ select:focus, select:active {
 }
 
 input[type="submit"] {
-    margin-top: 20px;
+    margin-top: 26px;
+    position: relative;
     background-color: #8a2be2;
     border: none;
     color: #fff;
-    padding: 7px 15px;
+    padding: 8px 15px;
+    min-width: 300px;
+    max-width: 90%;
     font-size: 1rem;
     cursor: pointer;
+    display: block;
 }
 
 .custom-form-container {
@@ -180,4 +187,19 @@ textarea {
     display: block;
     margin: 10px 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.float-left {
+    float: left;
+    margin-left: 0;
+}
+
+figcaption {
+    text-align: center;
+    padding: 10px;
+}
+
+figure {
+    height: 100%;
+    margin: 0 25px 0 0 ;
 }
