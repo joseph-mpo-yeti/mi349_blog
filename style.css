@@ -123,22 +123,28 @@ footer div {
     margin: 25px auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .custom-form > div {
     flex-basis: 45%;
+    margin: 5px 15px 0 0;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    min-width: 230px;
+    max-width: 100%;
 }
 
 .custom-form label {
     font-size: 1rem;
     margin: 15px auto;
+    width: 100%;
 }
 
 input:not([type="submit"]), select, textarea {
-    /* display: block; */
-    margin-top: 5px;
-    margin-bottom: 15px;
-    width: 90%;
+    margin: 10px auto;
+    width: 100%;
     padding: 8px;
     border-radius: 0;
     border: 1px solid black;
@@ -159,8 +165,9 @@ input[type="submit"] {
     border: none;
     color: #fff;
     padding: 8px 15px;
-    min-width: 300px;
-    max-width: 90%;
+    width: 100%;
+    min-width: 230px;
+    max-width: 100%;
     font-size: 1rem;
     cursor: pointer;
     display: block;
