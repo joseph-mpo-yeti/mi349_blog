@@ -210,3 +210,51 @@ figure {
     height: 100%;
     margin: 0 25px 0 0 ;
 }
+
+@media all and (max-width: 399px) {
+    .content {
+        width: 100%;
+        padding: 15px 15px 45px 15px; ;
+    }
+    
+    .float-left {
+        float: unset;
+        margin: unset;
+    }
+
+    #author-headshot {
+        display: block;
+        margin: 0 auto;
+    }
+
+    figcaption {
+        text-align: center;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+
+    .custom-form {
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+
+    .custom-form > div, input[type="submit"], textarea, input:not([type="submit"]), select {
+        min-width: 100%;
+    }
+
+    input[type="submit"] {
+        margin-top: 15px;
+    }
+
+    .table, section {
+        width: 100%;
+        overflow: scroll;
+        padding: 5px;
+    }
+}
